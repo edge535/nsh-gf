@@ -11,8 +11,11 @@
     <![endif]-->
     <link rel="stylesheet" href="../../exte-Import/boots/css/bootstrap.css">
     <link rel="stylesheet" href="../css/人物介绍.css">
+    <link rel="stylesheet" href="../css/人物样式.css">
     <style>
-
+        #box{
+            overflow: scroll;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +36,20 @@
     <div id="left" class="ear "></div>
     <div class="right_d ear_d"></div>
     <div id="right" class="ear "></div>
+
+    <!--人物样式-->
+    <div class="person_all"><!--所有人物在该div-->
+        <!--···········测试·······-->
+        <div class="person" id="person_1"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <span class="son"><img src="../img/person/rw-1.png" alt=""></span><!--人物本身-->
+                <span class="halo"></span><!--该div为人物脚下光环-->
+                <span class="head"></span><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <!--··········测试·······-->
+    </div><!--所有人物在该div-->
+    <!--人物样式 end-->
 </div>
 <!--片头与主体视屏 end-->
 
@@ -42,3 +59,4 @@
     <script src="../../exte-Import/boots/js/jquery-1.11.3.js"></script>
     <script src="../../exte-Import/boots/js/bootstrap.js"></script>
     <script src="../js/主体内容.js"></script>
+    <script src="../js/人物样式.js"></script>

@@ -8,7 +8,7 @@
   height: 768px;
   background: orange;
   position: absolute;
-  overflow: scroll;
+  overflow: hidden;
   z-index: -9999;
 }
 #box #pt {
