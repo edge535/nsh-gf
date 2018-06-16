@@ -1,9 +1,9 @@
 /*片头*/
+$(function(){
+    $('#box').scrollLeft(160);
+});
 setTimeout(function(){
     $("#pt").css('opacity','0');
-},11500);
-setTimeout(function(){
-    box_move_r(100)
 },11500);
 /*片头end*/
 
@@ -18,7 +18,7 @@ function box_move_r(){/*该函数是box的右移动*/
             let scroll =  $('#box').scrollLeft();/*获取值*/
             let max = 2500;/*设置边界值*/
             let set1 = setInterval(function() {
-                $('#box').scrollLeft(scroll+=1);/*右移*/
+                $('#box').scrollLeft(scroll+=5);/*右移*/
                 if (scroll >= max) {
                     clearInterval(set1);/*达到边界值之后取消定时器*/
                     jud_r = 0;/*让本身检测函数进入可被触发状态*/
@@ -46,7 +46,7 @@ function box_move_l(){/*该函数是box的左移动*/
             $('.ear_d').css('display','none');
             let scroll =  $('#box').scrollLeft();
             let set1 = setInterval(function() {
-                $('#box').scrollLeft(scroll-=1);
+                $('#box').scrollLeft(scroll-=5);
                 if (scroll <= 0) {
                     clearInterval(set1);
                     jud_r = 0;
@@ -69,6 +69,10 @@ function box_move_l(){/*该函数是box的左移动*/
 }/*该函数是box的左移动*/
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~左右耳朵控制*/
+setTimeout(function(){/*在片头完成后出后耳朵*/
+    $('.ear,.ear_d').css('display','block')
+},11500);/*在片头完成后出后耳朵*/
+
 var ces_r;/*移出检测*/
 var ces_l;/*移出检测*/
 $('.right_d').on({
@@ -78,7 +82,7 @@ $('.right_d').on({
                 jud_r =11;/*传递为移入触发*/
                 jud = 1;/*总监控运行开始*/
                 box_move_r();
-            },50)
+            },5)
         }
     },
     mouseout:function(){
@@ -94,7 +98,7 @@ $('.left_d').on({
                 jud_l =22;
                 jud = 1;/*总监控运行开始*/
                 box_move_l()
-            },50)
+            },5)
         }
     },
     mouseout:function(){
@@ -127,11 +131,20 @@ $('#left').on({
         }
     }
 });
-
+$(function(){/*触到两边边界小耳朵消失*/
+    $('#box').scroll(function(){
+        let scroll = $('#box').scrollLeft();
+        console.log(scroll);
+        if(scroll == 0){
+            $('#left').css('z-index','-9999')
+        }else if(scroll >= 2450){
+            $('#right').css('z-index','-9999')
+        }else{
+            $('.ear').css('z-index','10')
+        }
+    })
+});/*触到两边边界小耳朵消失*/
 /*给耳朵添加动态*/
-setTimeout(function(){/*在片头完成后出后耳朵*/
-    $('.ear,.ear_d').css('display','block')
-},11500);/*在片头完成后出后耳朵*/
 $(function(){/*耳朵的抖动*/
     setInterval(function(){
         $('#right').animate({
