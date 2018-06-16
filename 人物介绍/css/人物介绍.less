@@ -1,0 +1,80 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@pt-h:768px;
+/*片头自动播放*/
+#box{
+  width: 100%;
+  height: @pt-h;
+  background: orange;
+  position: absolute;
+  overflow: hidden;
+  z-index: -9999;
+  #pt{
+    height: @pt-h;
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    z-index: -998;
+    opacity: 1;
+  }
+  #bg{
+    height: @pt-h;
+    position: absolute;
+    //left: -100px;
+    z-index: -999;
+  }
+}
+/*片头自动播放end*/
+
+
+/*左右耳朵*/
+.ear_d{
+  position: fixed;
+  width: 30%;
+  height: 768px;
+  z-index: 5;
+  opacity: 0.3;/*透明度用于开发*/
+  background: #b4b4b4;
+  display: none;
+}
+.left_d{
+  left: 0;
+}
+.right_d{
+  right: 0;
+}
+
+.ear{
+  width: 85px;
+  height: 100px;
+  background: red;
+  position: fixed;
+  z-index: 10;
+  top: 43%;
+  background: url("../img/erduo.png");
+  display: none;
+}
+#left{
+  background-position:0px 0px ;
+  left: 0;
+}
+#left:hover{
+  background-position:0px -112px ;
+}
+#right{
+  background-position: -91px 0px ;
+  right: 0;
+}
+#right:hover{
+  background-position:-90px -112px ;
+}
+
+#right{
+  transform: translateX(-25%);
+}
+#left{
+  transform: translateX(25%);
+}
+/*左右耳朵 end*/
