@@ -5,24 +5,25 @@
     <title>Title</title>
     <script src="../../exte-Import/jq/jquery.js"></script>
     <style>
-        .img{
-            transform: scale(2);
-        }
-        div>img{
-            width: 100%;
-        }
         div{
-            width: 200px
+            width: 100px;
+            height: 100px;
+            background: orange;
+            position: absolute;
+            animation: myd 5s infinite alternate;
+        }
+        @keyframes myd {
+            0%{
+                top: 0;
+            }
+            100%{
+                top: 100px;
+            }
         }
     </style>
 </head>
 <body>
-<div>
-    <img src="../img/person/rw-1.png" alt="">
-</div>
-<div class="img">
-    <img src="../img/person/rw-1.png" alt="">
-</div>
+<div></div>
 
 </body>
 </html>

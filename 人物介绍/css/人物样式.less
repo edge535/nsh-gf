@@ -23,21 +23,21 @@
 
 #box{/*公共*/
   .person_all{
-    z-index: 11;
     //background: blue;
     width: 100%;
     height: 768px;
     position: relative;
-    .person{
+    .person{/*存放人物的div*/
+      z-index: 12;/*设置高于大耳朵的值，实现当鼠标进过人物时，大耳朵失去功能*/
       border: solid 1px;
       position: absolute;
-      .halo{
+      .halo{/*存放光环的div*/
         width: 85px;
         height: 33px;
         position: absolute;
         background: url("../img/result/jd-85-33.png");
       }
-      .head {
+      .head {/*存放头顶动画的div*/
         width: 38px;
         height: 35px;
         position: absolute;
@@ -45,7 +45,7 @@
         background: url("../img/result/head.png");
         background-position: -62px -91px;
       }
-      .son > img {
+      .son > img {/*人物图片*/
         width: 100%;
         z-index: 11;
         position: absolute;
@@ -55,7 +55,7 @@
 }/*公共*/
 
 
-#box { /*公共*/
+#box { /*单个*/
   .person_all {
     #person_1 { /*第一个*/
       width: 144px;
@@ -267,7 +267,7 @@
       left: 253%;
       .halo {
         bottom: 17px;
-        left: 1x;
+        left: 1px;
       }
       .son > img {
         z-index: 11;
@@ -310,3 +310,6 @@
     /*第4个*/
   }
 }
+
+
+
