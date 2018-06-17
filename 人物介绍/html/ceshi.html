@@ -5,27 +5,60 @@
     <title>Title</title>
     <script src="../../exte-Import/jq/jquery.js"></script>
     <style>
-        div{
-            background: orange;
+        .person_all{
+            background: blue;
+            width: 100%;
+            height: 768px;
             position: relative;
-            width: 180px;
-            height: 50px;
         }
-        input{
-            width: 100px;
-            position:absolute;
-            right: 0;
+        #person_1{
+            border: solid 1px;
+            width: 144px;
+            height: 149px;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+        .halo{
+            width: 85px;
+            height: 33px;
+            position: absolute;
+            bottom: 8px;
+            left: 20px;
+            background: url("../img/result/jd-85-33.png");
+        }
+        .son>img{
+            z-index: 11;
+            position: absolute;
+        }
+        .head{
+            width: 38px;
+            height: 35px;
+            background: url("../img/result/head.png");
+            background-position: -62px -91px;
+            position: absolute;
+            top: 0px;
+            left: 37px;
         }
     </style>
 </head>
 <body>
-<div>
-    <input type="text">
-</div>
+
+<!--人物样式-->
+<div class="person_all"><!--所有人物在该div-->
+    <!--···········测试·······-->
+    <div class="person" id="person_1"><!--一整个div为一个人物-->
+        <a href="#"><!--跳转链接-->
+            <div class="halo"></div><!--该div为人物脚下光环-->
+            <div class="son">
+                <img src="../img/person/rw-1.png" alt="ceshi">
+            </div><!--人物本身-->
+            <div class="head"></div><!--头顶装饰-->
+        </a>
+    </div><!--一整个div为一个人物-->
+    <!--··········测试·······-->
+</div><!--所有人物在该div-->
+<!--人物样式 end-->
+
 </body>
 </html>
-<script>
-    $('input').focus(function(){
-        $('input').css('width','180px')
-    })
-</script>
