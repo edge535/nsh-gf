@@ -42,8 +42,12 @@
             overflow: scroll;
         }
     </style>
+    <link rel="stylesheet" href="../../exte-Import/anm/animate.css">
 </head>
 <body>
+<!--背景音乐-->
+<audio src="../music/bg-music.mp3" loop autoplay id="bg_music" class="music_det" muted></audio>
+<!--背景音乐 end-->
 <!--片头与主体视屏-->
 <div id="box">
     <!--页面打开自动播放片头视屏 -->
@@ -66,7 +70,7 @@
     <div class="person_all"><!--所有人物在该div-->
         <div class="person in_left" id="person_1"><!--一整个div为一个人物-->
             <a href="#"><!--跳转链接-->
-                <div class="name"></div>
+                <div class="name"></div><!--animated bounceInLeft-->
                 <div class="halo"></div><!--该div为人物脚下光环-->
                 <div class="son">
                     <img src="../img/person/rw-1.png">
@@ -186,6 +190,21 @@
         </div><!--一整个div为一个人物-->
     </div><!--所有人物在该div-->
     <!--人物样式 end-->
+    <!--人物遮罩-->
+    <div class="shada"></div>
+    <!--人物遮罩 end-->
+    <!--logo与视屏-->
+    <div class="logo">
+        <a href="javascript:void(0)" id="music"></a><!--javascript:void(0)阻止默行为-->
+        <img src="../img/logo.png" height="191" width="413" id="logo"/>
+        <a href="javascript:void(0)" class="a">
+            <img src="../img/play.png" height="65" width="39"/>
+        </a>
+        <video id="zs" loop poster="../img/thu.png">
+            <source src="../vid/zs.mp4">
+        </video>
+    </div>
+    <!--logo与视屏 end-->
 </div>
 <!--片头与主体视屏 end-->
 

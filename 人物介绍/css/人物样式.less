@@ -25,13 +25,14 @@
   .person_all{
     //display: none;
     //background: blue;
-    width: 100%;
+    //width: 1366px;
     height: 768px;
     position: relative;
     .person{/*存放人物的div*/
       z-index: 12;/*设置高于大耳朵的值，实现当鼠标进过人物时，大耳朵失去功能*/
       //border: solid 1px;
       position: absolute;
+      //overflow: hidden;
       .halo{/*存放光环的div*/
         width: 85px;
         height: 33px;
@@ -146,8 +147,8 @@
     #person_6 { /*第6个*/
       width: 142px;
       height: 155px;
-      top: 25%;
-      left: 94%;
+      top: 29%;
+      left: 97%;
       .halo {
         bottom: 3px;
         left: 36px;
@@ -208,8 +209,8 @@
     #person_9 { /*第9个*/
       width: 90px;
       height: 125px;
-      top: 22%;
-      left: 203%;
+      top: 25%;
+      left: 202%;
       .halo {
         bottom: 3px;
         left: 2px;
@@ -329,6 +330,8 @@
       position: absolute;
       top: 39px;
       z-index: 12;
+      opacity: 0;
+      transition: opacity 50ms;
     }
     .in_left{
       .name{
@@ -373,8 +376,74 @@
         right: -8px;
       }
     }
+    #person_5{
+      .name{
+        background-position:0px -300px;
+        top: 25px;
+        right: -5px;
+      }
+    }
+    #person_6{
+      .name{
+        background-position:-50px -300px;
+        top: 41px;
+        left: -8px;
+      }
+    }
+    #person_7{
+      .name{
+        background-position:-150px 0px;
+        top: 41px;
+        left: -8px;
+      }
+    }
+    #person_8{
+      .name{
+        background-position:-100px 0px;
+        left: -18px;
+        top: 50px;
+      }
+    }
+    #person_9{
+      .name{
+        background-position:-200px 0px;
+        left: -18px;
+        top: 40px;
+      }
+    }
+    #person_10{
+      .name{
+        background-position:0px -150px;
+      }
+    }
+    #person_11{
+      .name{
+        background-position:-100px -150px;
+        top: 78px;
+        left: -8px;
+      }
+    }
+    #person_12{
+      .name{
+        background-position:-150px -150px;
+        top: 45px;
+        left: -13px;
+      }
+    }
   }
 }/*人物名字部分，单个部分*/
+
+
+.shada{/*突出人物遮罩层*/
+  position: absolute;
+  z-index: 11;
+  width: 3750px;
+  height: 768px;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all 1000ms;
+}/*突出人物遮罩层*/
 
 /*************************以下动画部分*****************************/
 //guangxiaox 1.5s steps(10) infinite/*测试参数*/
@@ -468,3 +537,67 @@
   }
 }/*动画部分*/
 /*************************动画部分 end*****************************/
+
+/*logo与视屏*/
+#box{
+  .logo{
+    width: 260px;
+    height: 150px;
+    background: url("../img/zs-bj.png");
+    position: absolute;
+    z-index: 13;
+    top: 255px;
+    left: 270px;
+    #logo{
+      position: absolute;
+      top: -175px;
+      left: -70px;
+    }
+    #zs{
+      width: 89%;
+      position: absolute;
+      left: 16px;
+      top: 11px;
+    }
+    .a{
+      display: block;
+      width: 89%;
+      height: 130px;
+      position: absolute;
+      z-index: 14;
+      left: 16px;
+      top: 11px;
+      background: rgba(0,0,0,0.5);
+      text-align: center;
+      line-height: 130px;
+    }
+    .a:hover{
+      background: rgba(0,0,0,0);
+    }
+
+    #music{
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: blue;
+      position: absolute;
+      z-index: 14;
+      top: -30px;
+      right: 22px;
+      background: url("../img/music.png");
+      background-position-x: 0px;
+      background-position-y: 0px;
+    }
+  }
+}
+@keyframes music_move {
+  0%{
+    background-position-y:0px;
+  }
+  100%{
+    background-position-y:120px;
+  }
+}
+//animation: halo_ani 1.9s steps(10) infinite;
+#music{animation:music_move 1s steps(4) infinite}
+/*logo与视屏 end*/
