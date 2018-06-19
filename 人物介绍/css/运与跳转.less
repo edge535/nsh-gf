@@ -1,0 +1,555 @@
+
+
+//      ┏┛┻━━━━┛┻┓
+//      ┃　　　　     　┃
+//      ┃　   ━  　   ┃
+//      ┃ ┳┛  ┗┳   ┃
+//      ┃　　　　　　   ┃
+//      ┃　　　┻　　   ┃
+//      ┃　　　　　　   ┃
+//      ┗━┓　 ┏━━━┛
+//        ┃　　　┃   神兽保佑
+//        ┃　　　┃   代码无BUG！
+//        ┃　　　┗━━━━━━━━━┓
+//        ┃　　　　　　　           ┣┓
+//        ┃　　　　                ┏┛
+//        ┗━┓ ┓ ┏━━━┳ ┓ ┏━┛
+//          ┃  ┫ ┫   ┃  ┫  ┫
+//          ┗━┻━┛   ┗━┻━┛
+//
+
+//yunOut 2s steps(28)
+
+@keyframes yunOut {
+  0%{
+    background-position-y:-25200px;
+  }
+  100%{
+    background-position-y:0px;
+  }
+}
+@keyframes yunIn {
+  0%{
+    background-position-y:0px;
+  }
+  100%{
+    background-position-y:-25200px;
+  }
+}
+
+.yun{/*云部分*/
+  width: 100%;
+  height: 768px;
+  background: url("../img/yun.png");
+  background-position: 0px 0px;
+  position: absolute;
+  top: 0;
+  z-index: 14;
+  display: none;
+}/*云部分*/
+
+
+.xq{/*人物详情基础样式，公共部分*/
+  width: 1366px;
+  height: 768px;
+  position: absolute;
+  div{
+    height:768px ;
+    background: red;
+    img{
+      position: absolute;
+    }
+    .particulars{
+      height: 768px;
+    }
+    .name{
+      width: 250px;
+      height: 550px;
+      top: 70px;
+      left: 250px;
+    }
+    .title{
+      top: 105px;
+      right: -19px;
+      width: 347px;
+      height: 759px;
+    }
+    .nsh{
+      top: 141px;
+      right: 20px;
+      width: 120px;
+      height: 356px;
+    }
+    a{
+      display: block;
+      width: 61px;
+      height: 81px;
+      position: absolute;
+      top: 80px;
+      right: 121px;
+      background:url("../img/backHome.png") ;
+      background-position: 0px 0px;
+    }
+    a:hover{
+      background:url("../img/backHome.png") ;
+      background-position: -96px 0px;
+    }
+  }
+}/*人物详情基础样式，公共部分*/
+
+/*动画部分*/
+@keyframes name_in_1 {
+  0%{
+    opacity: 0;
+    left: 100px;
+  }
+  100%{
+    opacity: 1;
+    left: 250px;
+  }
+}
+@keyframes name_in_2 {
+  0%{
+    opacity: 0;
+    left: 210px;
+  }
+  100%{
+    opacity: 1;
+    left: 310px;
+  }
+}
+@keyframes name_in_3 {
+  0%{
+    opacity: 0;
+    left: 300px;
+  }
+  100%{
+    opacity: 1;
+    left: 400px;
+  }
+}
+@keyframes name_in_5 {
+  0%{
+    opacity: 0;
+    left: 150px;
+  }
+  100%{
+    opacity: 1;
+    left: 250px;
+  }
+}
+@keyframes name_in_6 {
+  0%{
+    opacity: 0;
+    left: 150px;
+  }
+  100%{
+    opacity: 1;
+    left: 250px;
+  }
+}
+@keyframes name_in_7 {
+  0%{
+    opacity: 0;
+    left: 150px;
+  }
+  100%{
+    opacity: 1;
+    left: 250px;
+  }
+}
+@keyframes name_in_8 {
+  0%{
+    opacity: 0;
+    left: 150px;
+  }
+  100%{
+    opacity: 1;
+    left: 250px;
+  }
+}
+@keyframes name_in_11 {
+  0%{
+    opacity: 0;
+    left: 260px;
+  }
+  100%{
+    opacity: 1;
+    left: 360px;
+  }
+}
+@keyframes name_in_12 {
+  0%{
+    opacity: 0;
+    left: 170px;
+  }
+  100%{
+    opacity: 1;
+    left: 270px;
+  }
+}
+
+@keyframes title_in_1 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -119px;
+  }
+  100%{
+    opacity: 1;
+    right: -19px;
+  }
+}
+@keyframes title_in_2 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -119px;
+  }
+  100%{
+    opacity: 1;
+    right: -19px;
+  }
+}
+@keyframes title_in_3 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -119px;
+  }
+  100%{
+    opacity: 1;
+    right: -19px;
+  }
+}
+@keyframes title_in_5 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -6px;
+  }
+  100%{
+    opacity: 1;
+    right: 94px;
+  }
+}
+@keyframes title_in_6 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -6px;
+  }
+  100%{
+    opacity: 1;
+    right: 63px;
+  }
+}
+@keyframes title_in_7 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -70px;
+  }
+  100%{
+    opacity: 1;
+    right: -30px;
+  }
+}
+@keyframes title_in_8 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -70px;
+  }
+  100%{
+    opacity: 1;
+    right: -30px;
+  }
+}
+@keyframes title_in_11 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: -70px;
+  }
+  100%{
+    opacity: 1;
+    right: -30px;
+  }
+}
+@keyframes title_in_12 {
+  0%{
+    opacity: 0;
+    right: -119px;
+  }
+  50%{
+    opacity: 0;
+    right: 0px;
+  }
+  100%{
+    opacity: 1;
+    right: 100px;
+  }
+}
+
+@keyframes q_opacity {
+  0%{opacity: 0}
+  50%{opacity: 0}
+  100%{opacity: 1}
+}
+/*动画部分*/
+
+
+.xq{/*给人物详情页添加动画*/
+  width: 1366px;
+  height: 768px;
+  position: absolute;
+  div{
+    height:768px ;
+    background: red;
+    img{
+      position: absolute;
+    }
+    .particulars{
+      height: 768px;
+    }
+    .name{
+      width: 250px;
+      height: 550px;
+      top: 70px;
+      left: 250px;
+    }
+    .title{
+      top: 105px;
+      right: -19px;
+      width: 347px;
+      height: 759px;
+    }
+    .nsh{
+      top: 141px;
+      right: 20px;
+      width: 120px;
+      height: 356px;
+    }
+    a{
+      animation: q_opacity 8s;
+    }
+    .nsh{
+      animation: q_opacity 8s;
+    }
+  }/*人物详情，为公共*/
+
+  /*以下为部分人物详情修正*/
+  .person_1{/*给1号添加动画*/
+    .name{
+      animation: name_in_1 2s;
+    }
+    .title{
+      animation: title_in_1 4s;
+    }
+
+  }/*给1号添加动画*/
+  .person_2{/*给2号添加动画*/
+    .name{
+      left: 310px;
+      animation: name_in_2 2s;
+    }
+    .title{
+      animation: title_in_2 4s;
+    }
+    .nsh{
+      top: 100px;
+      right: 7px;
+      width: 120px;
+      height: 356px;
+    }
+  }/*给2号添加动画*/
+  .person_3{/*给3号添加动画*/
+    .name{
+      left: 400px;
+      animation: name_in_3 2s;
+    }
+    a{
+      top: 69px;
+      right: 167px;
+    }
+    .title{
+      top: 52px;
+      right: -19px;
+      width: 180px;
+      height: 531px;
+      animation: title_in_3 4s;
+    }
+    .nsh{
+      top: 26px;
+      right: -51px;
+      width: 120px;
+      height: 356px;
+    }
+  }/*给3号添加动画*/
+  .person_5{/*第五个详情修正*/
+    width: 1920px;
+    background: url("../img/particulars/particulars-5-bj.jpg") center top no-repeat;
+    .particulars{
+      //width: 100%;
+      height: 768px;
+    }
+    .title{
+      width: 260px;
+      height: 550px;
+      top: 69px;
+      right: 94px;
+      animation: title_in_5 4s;
+    }
+    .name{
+      animation: name_in_5 2s;
+    }
+    .nsh{
+      top: 135px;
+      right: 76px;
+      width: 104px;
+      height: 281px;
+    }
+    a{
+      top: 65px;
+      right: 90px;
+    }
+  }/*第五个详情修正*/
+  .person_6{/*第6个详情修正*/
+    width: 1920px;
+    background: url("../img/particulars/particulars-5-bj.jpg") center top no-repeat;
+    .particulars{
+      //width: 100%;
+      height: 768px;
+    }
+    .title{
+      width: 350px;
+      height: 580px;
+      top: 69px;
+      right: 63px;
+      animation: title_in_6 4s;
+    }
+    .name{
+      animation: name_in_6 2s;
+    }
+    .nsh{
+      top: 135px;
+      right: 76px;
+      width: 104px;
+      height: 281px;
+    }
+    a{
+      top: 65px;
+      right: 90px;
+    }
+  }/*第6个详情修正*/
+  .person_7{/*第7个详情修正*/
+    .name{
+      animation:name_in_7 2s ;
+    }
+    .title{
+      top: 70px;
+      right: -30px;
+      animation: title_in_7 4s;
+    }
+    .nsh{
+      top: 98px;
+      right: 15px;
+    }
+    a{
+      top: 123px;
+      right: 228px;
+    }
+  }/*第7个详情修正*/
+  .person_8{/*第8个详情修正*/
+    .name{
+      animation:name_in_7 2s ;
+    }
+    .title{
+      top: 40px;
+      right: -30px;
+      height: 600px;
+      animation: title_in_8 4s;
+    }
+    .nsh{
+      top: 8px;
+      right: 11px
+    }
+    a{
+      top: 123px;
+      right: 228px;
+    }
+  }/*第8个详情修正*/
+  .person_11{/*第11个详情修正*/
+    .name{
+      left: 360px;
+      animation:name_in_11 2s ;
+    }
+    .title{
+      top: 40px;
+      right: -30px;
+      height: 600px;
+      animation: title_in_11 4s;
+    }
+    .nsh{
+      top: 8px;
+      right: 11px
+    }
+    a{
+      top: 123px;
+      right: 228px;
+    }
+  }/*第11个详情修正*/
+  .person_12{/*第12个详情修正*/
+    .name{
+      left: 270px;
+      animation:name_in_12 2s ;
+    }
+    .title{
+      top: 80px;
+      right: 100px;
+      height: 600px;
+      animation: title_in_12 4s;
+    }
+    .nsh{
+      top: 101px;
+      right: 142px;
+    }
+    a{
+      top: 133px;
+      right: 347px;
+    }
+  }/*第12个详情修正*/
+}/*给人物详情页添加动画*/
+
+
+
+
+/*结合跳转部分*/
+.xq{
+  display: none;
+}

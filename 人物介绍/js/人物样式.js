@@ -176,22 +176,39 @@ $('.logo').mouseover(function(){
 });
 $('#music').on({
    mouseover:function(){
-       $('#music').css('background-position-x','-32px');
+       let music_class = $(this).attr('class');
+       if(music_class == 'play'){
+           $('#music').css('background-position-x','-32px');
+       }else{
+           $('#music').css('background-position-y','-30px');
+       }
+
    },
     mouseout:function(){
-        $('#music').css('background-position-x','0px')
+        let music_class = $(this).attr('class');
+        if(music_class == 'play'){
+            $('#music').css('background-position-x','0px');
+        }else{
+            $('#music').css('background-position-x','-62px');
+            $('#music').css('background-position-y','0px');
+        }
     },
-    // click:function(){
-    //    let x = $('#music').css('background-position-x');
-    //    let y = $('#music').css('background-position-y');
-    //     if(x != '-62px' && y != '0px'){
-    //         $('#music').css('background-position-x','-62px');
-    //         $('#music').css('background-position-y','-30px');
-    //     } else{
-    //         $('#music').css('background-position-x','0px');
-    //         $('#music').css('background-position-y','0px');
-    //     }
-    // }
+    click:function(){/*控制播放按钮根据背景的xy值选择对应的显示位置*/
+        let music_class = $(this).attr('class');
+        if(music_class == 'play'){
+            $('#music').css('background-position-x','-62');
+            $('#music').css('background-position-y','0px');
+            $(this).removeClass();
+            $(this).css('animation','null');
+            $('#bg_music').trigger('pause')
+        }else{
+            $(this).addClass('play');
+            $(this).css('animation','music_move 1s steps(4) infinite');
+            $('#music').css('background-position-x','0');
+            $('#music').css('background-position-y','0px');
+            $('#bg_music').trigger('play');
+        }
+    }/*控制播放按钮根据背景的xy值选择对应的显示位置*/
 
 
 });
