@@ -1,5 +1,9 @@
 
-
+$(function(){
+    setTimeout(function(){
+        $('.logo').css('display','block')
+    },11500)
+});
 //      ┏┛┻━━━━┛┻┓
 //      ┃　　　　     　┃
 //      ┃　   ━  　   ┃
@@ -32,6 +36,7 @@ function yun_ani(){/*云动画*/
 
 /*跳转*/
 $('.person_all').find('a').click(function(){/*点击之后把云层显示，并执行动画*/
+    $('.xq').css('display','block');
     yun_ani();
     setTimeout(function(){
         $('#box').css('display','none');
@@ -40,11 +45,20 @@ $('.person_all').find('a').click(function(){/*点击之后把云层显示，并�
     $('.xq').find('div').each(function(){
         if($(this).attr('class') == index){
             $(this).css('display','block');
-
         }
     });
-    // $('.xq').find(`#${index}`).css('display','block');
 });/*点击之后把云层显示，并执行动画*/
 
 
+$('.xq>div>a').click(function(){
+    // $('#pt').css('display','none');
+    setTimeout(function(){
+        $('.xq').css('display','none');
+    },3000)
+    yun_ani();
+    setTimeout(function(){
+        $('#box').css('display','block');
+        $(this).parent().css('display','none');
+    },3000);
 
+});

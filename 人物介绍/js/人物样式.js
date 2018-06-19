@@ -212,5 +212,12 @@ $('#music').on({
 
 
 });
+
+
+$('.a').on({
+    click:function(){
+
+    }
+});
 /*logo与视屏 end*/
 
