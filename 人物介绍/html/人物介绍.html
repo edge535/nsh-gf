@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="../css/运与跳转.css">
     <style>
         #box{
-            overflow: scroll;
+            /*overflow: scroll;*/
         }
     </style>
     <link rel="stylesheet" href="../../exte-Import/anm/animate.css">
@@ -50,163 +50,163 @@
 <audio src="../music/bg-music.mp3" loop autoplay id="bg_music" class="music_det" ></audio>
 <!--背景音乐 end-->
 <!--片头与主体视屏-->
-<!--<div id="box">-->
-    <!--&lt;!&ndash;页面打开自动播放片头视屏 &ndash;&gt;-->
-    <!--<video id="pt" autoplay>-->
-        <!--<source src="../vid/pt.mp4">-->
-    <!--</video>-->
-    <!--&lt;!&ndash;页面打开自动播放片头视屏 end&ndash;&gt;-->
-    <!--&lt;!&ndash;主题内容视屏&ndash;&gt;-->
-    <!--<video id="bg" autoplay loop>-->
-        <!--<source src="../vid/bg.mp4">-->
-    <!--</video>-->
-    <!--&lt;!&ndash;主题内容视屏end&ndash;&gt;-->
-    <!--&lt;!&ndash;耳朵&ndash;&gt;-->
-    <!--<div class="left_d ear_d"></div>-->
-    <!--<div id="left" class="ear "></div>-->
-    <!--<div class="right_d ear_d"></div>-->
-    <!--<div id="right" class="ear "></div>-->
+<div id="box">
+    <!--页面打开自动播放片头视屏 -->
+    <video id="pt" autoplay>
+        <source src="../vid/pt.mp4">
+    </video>
+    <!--页面打开自动播放片头视屏 end-->
+    <!--主题内容视屏-->
+    <video id="bg" autoplay loop>
+        <source src="../vid/bg.mp4">
+    </video>
+    <!--主题内容视屏end-->
+    <!--耳朵-->
+    <div class="left_d ear_d"></div>
+    <div id="left" class="ear "></div>
+    <div class="right_d ear_d"></div>
+    <div id="right" class="ear "></div>
 
-    <!--&lt;!&ndash;人物样式&ndash;&gt;-->
-    <!--<div class="person_all">&lt;!&ndash;所有人物在该div&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_1">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>&lt;!&ndash;animated bounceInLeft&ndash;&gt;-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-1.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_2">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-2.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_3">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-3.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_right" id="person_5">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-5.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_6">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-6.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_7">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-7.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_8">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-8.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_9">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-9.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_right" id="person_10">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-10.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_11">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-11.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_left" id="person_12">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-12.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-        <!--<div class="person in_right" id="person_4">&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-            <!--<a href="#">&lt;!&ndash;跳转链接&ndash;&gt;-->
-                <!--<div class="name"></div>-->
-                <!--<div class="son">-->
-                    <!--<img src="../img/person/rw-4.png">-->
-                <!--</div>&lt;!&ndash;人物本身&ndash;&gt;-->
-                <!--<div class="halo"></div>&lt;!&ndash;该div为人物脚下光环&ndash;&gt;-->
-                <!--<div class="head"></div>&lt;!&ndash;头顶装饰&ndash;&gt;-->
-            <!--</a>-->
-        <!--</div>&lt;!&ndash;一整个div为一个人物&ndash;&gt;-->
-    <!--</div>&lt;!&ndash;所有人物在该div&ndash;&gt;-->
-    <!--&lt;!&ndash;人物样式 end&ndash;&gt;-->
-    <!--&lt;!&ndash;人物遮罩&ndash;&gt;-->
-    <!--<div class="shada"></div>-->
-    <!--&lt;!&ndash;人物遮罩 end&ndash;&gt;-->
-    <!--&lt;!&ndash;logo与视屏&ndash;&gt;-->
-    <!--<div class="logo">-->
-        <!--<a href="javascript:void(0)" id="music" class="play"></a>&lt;!&ndash;javascript:void(0)阻止默行为&ndash;&gt;-->
-        <!--<img src="../img/logo.png" height="191" width="413" id="logo"/>-->
-        <!--<a href="javascript:void(0)" class="a">-->
-            <!--<img src="../img/play.png" height="65" width="39"/>-->
-        <!--</a>-->
-        <!--<video id="zs" loop poster="../img/thu.png">-->
-            <!--<source src="../vid/zs.mp4">-->
-        <!--</video>-->
-    <!--</div>-->
-    <!--&lt;!&ndash;logo与视屏 end&ndash;&gt;-->
-<!--</div>-->
+    <!--人物样式-->
+    <div class="person_all"><!--所有人物在该div-->
+        <div class="person in_left" id="person_1"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div><!--animated bounceInLeft-->
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-1.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_2"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-2.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_3"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-3.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_right" id="person_5"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-5.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_6"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-6.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_7"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-7.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_8"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-8.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_9"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-9.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_right" id="person_10"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-10.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_11"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-11.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_left" id="person_12"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="son">
+                    <img src="../img/person/rw-12.png">
+                </div><!--人物本身-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+        <div class="person in_right" id="person_4"><!--一整个div为一个人物-->
+            <a href="#"><!--跳转链接-->
+                <div class="name"></div>
+                <div class="son">
+                    <img src="../img/person/rw-4.png">
+                </div><!--人物本身-->
+                <div class="halo"></div><!--该div为人物脚下光环-->
+                <div class="head"></div><!--头顶装饰-->
+            </a>
+        </div><!--一整个div为一个人物-->
+    </div><!--所有人物在该div-->
+    <!--人物样式 end-->
+    <!--人物遮罩-->
+    <div class="shada"></div>
+    <!--人物遮罩 end-->
+    <!--logo与视屏-->
+    <div class="logo">
+        <a href="javascript:void(0)" id="music" class="play"></a><!--javascript:void(0)阻止默行为-->
+        <img src="../img/logo.png" height="191" width="413" id="logo"/>
+        <a href="javascript:void(0)" class="a">
+            <img src="../img/play.png" height="65" width="39"/>
+        </a>
+        <video id="zs" loop poster="../img/thu.png">
+            <source src="../vid/zs.mp4">
+        </video>
+    </div>
+    <!--logo与视屏 end-->
+</div>
 <!--片头与主体视屏 end-->
 
 <!--云与跳转部分-->
@@ -245,7 +245,7 @@
     </div>
     <!--第三个人物详情-->
 
-    第5个人物详情
+    <!--第5个人物详情-->
     <div class="person_5">
     <img src="../img/particulars/particulars-5.png" class="particulars"/>
     <img src="../img/particulars/title-5.png" class="title"/>
@@ -253,9 +253,9 @@
     <img src="../img/nsh.png" height="277" width="102" class="nsh"/>
     <a href=""></a>
     </div>
-    第5个人物详情
+    <!--第5个人物详情-->
 
-     第6个人物详情
+    <!--第6个人物详情-->
     <div class="person_6">
         <img src="../img/particulars/particulars-6.jpg" class="particulars"/>
         <img src="../img/particulars/title-6.png" class="title"/>
@@ -263,9 +263,9 @@
         <img src="../img/nsh.png" height="277" width="102" class="nsh"/>
         <a href=""></a>
     </div>
-    第6个人物详情
+    <!--第6人物详情-->
 
-     第7个人物详情
+    <!--第7个人物详情-->
     <div class="person_7">
         <img src="../img/particulars/particulars-7.png" class="particulars"/>
         <img src="../img/particulars/title-7.png" class="title"/>
@@ -273,9 +273,9 @@
         <img src="../img/nsh.png" height="277" width="102" class="nsh"/>
         <a href=""></a>
     </div>
-    第7个人物详情
+    <!--第7个人物详情-->
 
-     第8个人物详情
+    <!--第8个人物详情-->
     <div class="person_8">
         <img src="../img/particulars/particulars-8.png" class="particulars"/>
         <img src="../img/particulars/title-8.png" class="title"/>
@@ -283,9 +283,9 @@
         <img src="../img/nsh.png" height="277" width="102" class="nsh"/>
         <a href=""></a>
     </div>
-    第8个人物详情
+    <!--第8个人物详情-->
 
-     第11个人物详情
+    <!--第11个人物详情-->
     <div class="person_11">
         <img src="../img/particulars/particulars-11.jpg" class="particulars"/>
         <img src="../img/particulars/title-11.png" class="title"/>
@@ -293,7 +293,7 @@
         <img src="../img/nsh.png" height="277" width="102" class="nsh"/>
         <a href=""></a>
     </div>
-    第11个人物详情
+    <!--第11个人物详情-->
 
     <!-- 第12个人物详情-->
     <div class="person_12">
