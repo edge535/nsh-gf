@@ -42,9 +42,14 @@ $('.person_all').find('a').click(function(){/*点击之后把云层显示，并�
         $('#box').css('display','none');
     },3000);
     let index = $(this).parent().attr('id');
+    console.log(index);
     $('.xq').find('div').each(function(){
         if($(this).attr('class') == index){
-            $(this).css('display','block');
+            console.log($(this));
+            $(this).css({
+                display:'block',
+                zIndex:100
+            });
         }
     });
 });/*点击之后把云层显示，并执行动画*/
@@ -53,8 +58,13 @@ $('.person_all').find('a').click(function(){/*点击之后把云层显示，并�
 $('.xq>div>a').click(function(){
     // $('#pt').css('display','none');
     setTimeout(function(){
+
+        $(this).parent().css({
+            display:'none',
+            zIndex:'-99999999'
+        });
         $('.xq').css('display','none');
-    },3000)
+    },3000);
     yun_ani();
     setTimeout(function(){
         $('#box').css('display','block');

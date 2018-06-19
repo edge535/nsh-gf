@@ -10,6 +10,7 @@
   position: absolute;
   overflow: hidden;
   z-index: -9999;
+  transition: all 2s;
 }
 #box #pt {
   height: 768px;
