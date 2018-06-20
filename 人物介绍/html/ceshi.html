@@ -5,28 +5,37 @@
     <title>Title</title>
     <script src="../../exte-Import/jq/jquery.js"></script>
     <style>
-
+        div{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            border: solid 1px ;
+        }
+        .xq{
+            width: 300px;
+            height: 300px;
+            background: black;
+            position: relative;
+        }
+        .div{
+            position: absolute;
+        }
+        .div1{
+            z-index: 12;
+        }
+        .div2{
+            z-index: 11;
+            /*display: none;*/
+        }
     </style>
     <link rel="stylesheet" href="../../exte-Import/anm/animate.css">
 </head>
 <body>
-<div class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                <p>One fine body&hellip;</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+
+<div class="xq">
+    <div class="div1 div">1</div>
+    <div class="div2 div">2</div>
+</div>
 
 </body>
 </html>
